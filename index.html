@@ -2,39 +2,51 @@
 <html>
     <head>
     <title>My Portfolio</title>
+    <link rel='stylesheet' href='CSSstyle.css'/>
     </head>
     <body>
-        <h1>About</h1>
-        <p>My name is Kyler Haag. I am an Engineering student at BYU and I will graduate in April.</p>
+<div class="container">
+
+        <div class="myTitle">
+            <h1>About Kyler Haag</h1>
+        </div>
+        <ul class="header">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li style="float:right"><a class="active" href="#about">About</a></li>
+              </ul>
+
+    <div class="myFavStyle">
+    <p class="intro">My name is Kyler Haag. I am an Engineering student at BYU and I will graduate in April.</p>
+    </div>
 
         <hr>
 
-        <h2>Projects</h2>
+        <h2 id="projectTitle">Projects</h2>
 
-        <ul>I have worked on several different projects including the following:
-
+        <ol style="display: flex; flex-direction: column; align-items: center">I have worked on several different projects including the following:
             <li>Laser Tag</li>
             <li>Keith's app</li>
             <li>Capstone project</li>
+        </ol>
 
-        </ul>
+        <h2 id="projectTitle">Experience</h2>
 
-        <hr>
-
-        <h2>Experience</h2>
-        <p>As a coder I am very experienced with code. I have worked with software and hardware as an Engineering student.
+        <p style="display: flex; justify-content: center; padding: 10px 40px 10px 40px">
+            As a coder I am very experienced with code. I have worked with software and hardware as an Engineering student.
             I have worked on the backend and the front end of coding projects. The Laser tag project was a great experience
             for me. As an engineer I have worked several different jobs including as an intern in Las Vegas on the Nevada
             National Security Site.
         </p>
-        <h3>Contact</h3>
-        <ol>You can contact me in these ways:
+
+        <h3 id="projectTitle">Contact</h3>
+        <ol class="footer">You can contact me in these ways:
             <li>Phone: 912 812 9010</li>
             <li>Email: KylerHaag@gmail.com</li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/keiler-haag-25a590139/">Keiler F. Haag</a></li>
             <li>Github: <a href="https://github.com/kylerhaag">KylerHaag</a> </li>
         </ol>
+    </div>
     </body>
-
 </html>
-
